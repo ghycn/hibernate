@@ -4,8 +4,8 @@ public class UserRoleEntity {
     private int id;
     private int userId;
     private int roleId;
-//    private UserEntity userByUserId;
-//    private RoleEntity roleByRoleId;
+    private UserEntity userByUserId;
+    private RoleEntity roleByRoleId;
 
     public int getId() {
         return id;
@@ -53,19 +53,19 @@ public class UserRoleEntity {
         return result;
     }
 
-//    public UserEntity getUserByUserId() {
-//        return userByUserId;
-//    }
-//
-//    public void setUserByUserId(UserEntity userByUserId) {
-//        this.userByUserId = userByUserId;
-//    }
-//
-//    public RoleEntity getRoleByRoleId() {
-//        return roleByRoleId;
-//    }
-//
-//    public void setRoleByRoleId(RoleEntity roleByRoleId) {
-//        this.roleByRoleId = roleByRoleId;
-//    }
+    public UserEntity getUserByUserId() {
+        return userByUserId;
+    }
+
+    public void setUserByUserId(UserEntity userByUserId) {
+        this.userByUserId = userByUserId;
+    }
+
+    public RoleEntity getRoleByRoleId() {
+        return roleByRoleId;
+    }
+
+    public void setRoleByRoleId(RoleEntity roleByRoleId) {
+        this.roleByRoleId = roleByRoleId;
+    }
 }

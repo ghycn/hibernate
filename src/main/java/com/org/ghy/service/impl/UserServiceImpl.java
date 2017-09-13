@@ -26,13 +26,13 @@ public class UserServiceImpl implements IUserService{
         Session session = hibernateTemplate.getSessionFactory().openSession();
         List<UserEntity> list = session.createQuery("from UserEntity ").list();
 
-        for(UserEntity userEntity:list) {
-            Iterator<UserRoleEntity> iterator = userEntity.getUserRolesByUserId().iterator();
-            while (iterator.hasNext()) {
-                UserRoleEntity userRoleEntity = iterator.next();
-                System.out.println("角色ID:"+userRoleEntity.getRoleId());
-            }
-        }
+//        for(UserEntity userEntity:list) {
+//            Iterator<UserRoleEntity> iterator = userEntity.getUserRolesByUserId().iterator();
+//            while (iterator.hasNext()) {
+//                UserRoleEntity userRoleEntity = iterator.next();
+//                System.out.println("角色ID:"+userRoleEntity.getRoleId());
+//            }
+//        }
         session.close();
         return list;
     }

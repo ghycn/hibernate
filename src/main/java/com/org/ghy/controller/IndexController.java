@@ -36,7 +36,11 @@ public class IndexController {
     public String queryUser(){
         List<UserEntity>  list = userService.queryUser();
 
-        return JSON.toJSONString(list);
+        //Json转换过滤器
+        SimplePropertyPreFilter filter = new SimplePropertyPreFilter();
+        Set<String> excludes = filter.getExcludes();
+        excludes.add("userRolesByUserId");
+        return JSON.toJSONString(list,filter);
     }
 
 
