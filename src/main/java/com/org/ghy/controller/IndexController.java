@@ -1,7 +1,6 @@
 package com.org.ghy.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.serializer.PropertyFilter;
 import com.alibaba.fastjson.serializer.SimplePropertyPreFilter;
 import com.org.ghy.model.UserEntity;
 import com.org.ghy.service.IUserService;

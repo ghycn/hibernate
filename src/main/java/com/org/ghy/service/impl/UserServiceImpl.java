@@ -25,7 +25,6 @@ public class UserServiceImpl implements IUserService{
 
         Session session = hibernateTemplate.getSessionFactory().openSession();
         List<UserEntity> list = session.createQuery("from UserEntity ").list();
-
 //        for(UserEntity userEntity:list) {
 //            Iterator<UserRoleEntity> iterator = userEntity.getUserRolesByUserId().iterator();
 //            while (iterator.hasNext()) {
