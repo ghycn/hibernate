@@ -1,6 +1,6 @@
 package com.org.ghy.service;
 
-import com.org.ghy.bean.UserEntity;
+import com.org.ghy.model.UserEntity;
 
 import java.util.List;
 
@@ -9,4 +9,6 @@ import java.util.List;
  */
 public interface IUserService {
     List<UserEntity> queryUser();
+
+    List<UserEntity> queryUserListByRoleId(Integer roleId);
 }

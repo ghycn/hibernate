@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.org.ghy.model.UserRoleEntity" table="USER_ROLE" schema="test">
+        <id name="id">
+            <column name="ID" sql-type="int(10)"/>
+        </id>
+        <property name="userId">
+            <column name="USER_ID" sql-type="int(10)"/>
+        </property>
+        <property name="roleId">
+            <column name="ROLE_ID" sql-type="int(10)"/>
+        </property>
+        <!--<many-to-one name="userByUserId" class="com.org.ghy.model.UserEntity" insert="false" update="false">-->
+            <!--<column name="USER_ID"/>-->
+        <!--</many-to-one>-->
+        <!--<many-to-one name="roleByRoleId" class="com.org.ghy.model.RoleEntity" insert="false" update="false">-->
+            <!--<column name="ROLE_ID"/>-->
+        <!--</many-to-one>-->
+    </class>
+</hibernate-mapping>

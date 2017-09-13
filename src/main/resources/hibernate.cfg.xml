@@ -11,9 +11,13 @@
     <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
     <property name="hibernate.show_sql">true</property>
     <property name="hbm2ddl.auto">update</property>
-    <property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+    <property name="connection.url">jdbc:mysql://10.211.55.4:3306/test</property>
     <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    <mapping class="com.org.ghy.bean.UserEntity"/>
-    <mapping resource="com/org/ghy/bean/UserEntity.hbm.xml"/>
+    <mapping class="com.org.ghy.model.RoleEntity"/>
+    <mapping class="com.org.ghy.model.UserEntity"/>
+    <mapping class="com.org.ghy.model.UserRoleEntity"/>
+    <mapping resource="com/org/ghy/model/RoleEntity.hbm.xml"/>
+    <mapping resource="com/org/ghy/model/UserEntity.hbm.xml"/>
+    <mapping resource="com/org/ghy/model/UserRoleEntity.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
